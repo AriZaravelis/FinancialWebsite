@@ -1,0 +1,88 @@
+.instant-search {
+	position: relative; /* Loading indicator will be at top of search bar. */
+	max-width: 250px; /* Maximum width will try to be 250px. If it can't, it will shrink down, thus making it responsive. */
+}
+
+.instant-search,
+.instant-search__input {
+	font-family: sans-serif;
+}
+
+.instant-search,
+.instant-search * {
+	transition: background 0.15s, box-shadow 0.15s;
+}
+
+/* Whenever the input field gets focused, these syles will be applied. */
+.instant-search:focus-within {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); /* Box shadow will apply to the whole of the container. */
+}
+
+.instant-search,
+.instant-search__input-container {
+    border-radius: 5px;
+}
+
+.instant-search__input-container {
+    display: inline-flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px;
+    background: #eeeeee;
+}
+
+.instant-search__input-container:focus-within {
+    background: #ffffff; /* This will change the background color to white once the user clicks on search bar. */
+}
+
+.instant-search__input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0 6px;
+    background: transparent;
+}
+
+.instant-search__results-container {
+    max-height: 250px;
+    overflow-y: auto;
+    visibility: hidden; /* By default, results are hidden. */
+    opacity: 0;
+    transition: visibility 0.1s, opacity 0.1s;
+}
+
+.instant-search__results-container {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Styles the search results. */
+.instant-search__result {
+    display: block;
+    color: #333333;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+/* Hover effect when cursor is over a search result. */
+.instant-search__result:hover{
+    background: #eeeeee;
+}
+
+/* Styles a border between each different search result. */
+.instant-search__result:not(:last-of-type) {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.instant-search__title {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.instant-search__paragraph {
+    line-height: 1.5;
+    margin: 8px 0;
+}
