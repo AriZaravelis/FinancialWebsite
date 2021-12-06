@@ -1,7 +1,7 @@
 <?php
 
 //Establishes a connection with my database named financcialdb.
-$conn = mysqli_connect('localhost', 'root', '7698frza', "financialdb");
+$conn = mysqli_connect('localhost', 'root', 'password123', "financialdb");
 
 //Check to see if the keywords were provided.
 if(isset($_GET['k']) && $_GET['k'] != '') {
