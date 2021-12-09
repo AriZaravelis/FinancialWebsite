@@ -1,0 +1,74 @@
+.instantSearch {
+    position: relative;
+    padding-top: 0px;
+    max-width: 300px; /* Maximum width will try to be 300px. If it can't, it will shrink down, thus making it responsive. */
+}
+ 
+.instantSearch,
+.instantSearchInput {
+    font-family: sans-serif;
+}
+ 
+.instantSearch,
+.instantSearch * {
+    transition: background 0.15s, box-shadow 0.15s;
+}
+ 
+/* Whenever the input field gets focused, these syles will be applied. */
+.instantSearch:focus-within {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); /* Box shadow will apply to the whole of the container. */
+}
+ 
+.instantSearch,
+.instantSearchInputContainer {
+    border-radius: 5px;
+}
+ 
+.instantSearchInputContainer {
+    display: inline-flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px;
+    background: #eeeeee;
+}
+ 
+.instantSearchInputContainer:focus-within {
+    background: #ffffff; /* This will change the background color to white once the user clicks on search bar. */
+}
+ 
+.instantSearchInput {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0 6px;
+    background: transparent;
+}
+ 
+
+.results {
+    position: absolute;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 25px;
+  }
+
+.resultsContent {
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.resultsContent a, p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.results a:hover {
+    background-color: #ddd;
+}
