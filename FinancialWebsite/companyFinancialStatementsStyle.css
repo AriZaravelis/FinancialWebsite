@@ -1,0 +1,72 @@
+h1 {
+	text-align: center;
+	margin-top: 45px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+h3 {
+	display: block;
+	margin-right: 270px;
+	margin-left: 270px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 6px 7px;
+	font-family: "Times New Roman", Times, serif;
+    line-height: normal;
+    font-weight: normal;
+    color: #fff;
+    background-color: #333333;
+}
+
+.overviewBody {
+	margin-left: 270px;
+	margin-right: 270px;
+	font-family: "Times New Roman", Times, serif;
+	line-height: 20px;
+}
+
+.overviewTable {
+	border-collapse: collapse;
+	width: 25%;
+	margin-top: 50px;
+	margin-bottom: 70px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+th, td {
+	padding: 8px;
+  }
+
+tr:nth-child(odd) {
+	background-color: #f2f2f2;
+}
+
+.incomeStatementsTable {
+	border-collapse: collapse;
+	width: 66.3%;
+	margin-left: 270px;
+	margin-right: 270px;
+	margin-bottom: 100px;
+}
+
+.balanceSheetsTable {
+	border-collapse: collapse;
+	width: 66.3%;
+	margin-left: 270px;
+	margin-right: 270px;
+	margin-bottom: 100px;
+}
+
+.cashFlowStatementsTable {
+	border-collapse: collapse;
+	width: 66.3%;
+	margin-left: 270px;
+	margin-right: 270px;
+	margin-bottom: 100px;
+}

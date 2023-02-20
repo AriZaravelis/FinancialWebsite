@@ -1,0 +1,157 @@
+/* Navigation Bar Styling */
+
+.topMenu {
+	width: 95%;
+	min-width: 1000px;
+	margin: 0;
+}
+
+header {
+	position: relative;
+	background-color: #000000;
+	width: 100%;
+	min-width: 1000px;
+	margin: 0;
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.menuItems {
+	float: right;
+}
+
+.menuItems ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menuItems li {
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 8%;
+	padding-bottom: 8%;
+	position: relative;
+}
+
+.menuItems ul li a {
+	color: #FFD700;
+	font-family: "Times New Roman";
+	font-size: 130%;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.menuItems ul li a:hover {
+	color: #ffffff;
+}
+
+.menuItems ul li a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #FFD700;
+	
+	position: absolute;
+	top: 0;
+	width: 0%;
+	
+	transition: all ease-in-out 250ms;
+}
+
+.menuItems ul li a:hover::before {
+	width: 100%;
+}
+
+
+
+
+
+/*Search Bar Styling*/
+
+.instantSearch {
+    position: relative;
+    padding-top: 0px;
+    max-width: 300px; /* Maximum width will try to be 300px. If it can't, it will shrink down, thus making it responsive. */
+}
+ 
+.instantSearch,
+.instantSearchInput {
+    font-family: sans-serif;
+}
+ 
+.instantSearch,
+.instantSearch * {
+    transition: background 0.15s, box-shadow 0.15s;
+}
+ 
+/* Whenever the input field gets focused, these syles will be applied. */
+.instantSearch:focus-within {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); /* Box shadow will apply to the whole of the container. */
+}
+ 
+.instantSearch,
+.instantSearchInputContainer {
+    border-radius: 5px;
+}
+ 
+.instantSearchInputContainer {
+    display: inline-flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px;
+    background: #eeeeee;
+}
+ 
+.instantSearchInputContainer:focus-within {
+    background: #ffffff; /* This will change the background color to white once the user clicks on search bar. */
+}
+ 
+.instantSearchInput {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0 6px;
+    background: transparent;
+}
+ 
+
+.results {
+    position: absolute;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 25px;
+  }
+
+.resultsContent {
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.resultsContent a, p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.results a:hover {
+    background-color: #ddd;
+}
+
+
+
+/* Main body for each web page. */
+
+body {
+	margin: auto;
+}

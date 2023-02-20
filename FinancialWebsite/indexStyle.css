@@ -1,0 +1,57 @@
+body {
+	background-image: url("images/indexBack.jpg");
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+	font-family: Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 600;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #000000, 0px 0px 10px #000000, 0px 0px 10px #000000, 0px 0px 20px #000000;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Niconne', cursive;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #000000, 0px 0px 10px #000000, 0px 0px 10px #000000, 0px 0px 20px #000000;
+    text-align: center;
+}
+
+.content {
+    width: 70%;
+    transform: translate(25%, 10%);
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding-bottom: 10%;
+}
+
+.content a {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #aa8d56;
+    border-radius: 10px;
+    color: #aa8d56;
+    outline: medium none;
+    padding: 15px;
+    text-decoration: none;
+    line-height: 130px;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.content a:hover {
+    background-color:  #aa8d56;
+    color: #ffffff;
+}
+
+.content p {
+    text-align: center;
+}
